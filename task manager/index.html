@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прогноз погоды</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Прогноз погоды</h1>
+
+    <form class="search-form" id="searchForm">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Введите город (например, Москва)"
+        autocomplete="off"
+      />
+      <button type="submit">Узнать погоду</button>
+    </form>
+
+    <section class="weather-card" id="weatherCard">
+      <div class="weather-visual">
+        <img
+          id="weatherIcon"
+          src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt="Иконка погоды"
+        />
+      </div>
+
+      <div class="weather-info">
+        <h2 id="cityName">Город: —</h2>
+        <p id="temperature">Температура: — °C</p>
+        <p id="description">Описание: —</p>
+        <p id="humidity">Влажность: — %</p>
+        <p id="wind">Ветер: — м/с</p>
+      </div>
+    </section>
+
+    <p class="message" id="message"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
